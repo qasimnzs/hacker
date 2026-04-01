@@ -45,7 +45,7 @@ def jalan(z):
 		time.sleep(0.05)
 def tokenz():
 	os.system('clear')
-	print logo()
+	print logo('logo')
 	toket = raw_input("\033[1;97m[+] Token :")
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
